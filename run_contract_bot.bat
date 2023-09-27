@@ -19,8 +19,15 @@ REM Write the updated values to config.yaml
   echo   database: %DB_DATABASE%
 ) > config.yaml
 
-start "" venv\Scripts\python.exe app.py
-timeout /t 5 /nobreak >nul
-start http://127.0.0.1:5000
+REM Start the Flask application
+python app.py
+
+REM Pause the script to keep the command prompt window open (optional)
+pause
+
+REM Open the browser
+echo Opening browser...
+start "" http://127.0.0.1:5000
+
 endlocal
 
