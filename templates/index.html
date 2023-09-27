@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Real Estate Contract Generator</title>
+</head>
+<body>
+    <div class="header">
+        <span style="float:right"><button id="toggle-menu" class="menu-toggle">☰</button></span>
+        <span style="margin:auto"><h1 class="title">Real Estate Contract Generator</h1></span>
+    </div>
+    <div class="side-menu">
+        <div class="menu-content">
+            <button id="save-button" class="menu-button">Save</button>
+            <button class="menu-button">Edit</button>
+            <a href="{{ url_for('back_to_login') }}" class="menu-button">Back to Login</a>
+        </div>
+        <!--
+        <div class="dropdown">
+            <button class="menu-button" type="button" id="feedbackDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Feedback
+            </button>
+            <div class="dropdown-menu" aria-labelledby="feedbackDropdown">
+                <a class="dropdown-item" href="#" data-rating="1">1 star</a>
+                <a class="dropdown-item" href="#" data-rating="2">2 stars</a>
+                <a class="dropdown-item" href="#" data-rating="3">3 stars</a>
+                <a class="dropdown-item" href="#" data-rating="4">4 stars</a>
+                <a class="dropdown-item" href="#" data-rating="5">5 stars</a>
+            </div>
+        </div>
+        -->
+    </div>
+
+    <div class="chat-container">
+        <div class="chat-output" id="chat-output">
+            <div class="message-container system-message initial">
+                <div class="message">
+                    <pre>Please provide your preferences or specific clauses you would like to add in the contract.</pre>
+                </div>
+            </div>
+        </div>
+        <div class="sticky">
+            <div class="message-container" id="user-message"></div>
+            <input type="text" id="user-input" placeholder="Type your message here...">
+            <button id="send-button">Send</button>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
+
