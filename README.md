@@ -47,7 +47,7 @@ pip install Flask openai mysql-connector-python
 -
 
 # License
--
+MIT License
 
 
 
