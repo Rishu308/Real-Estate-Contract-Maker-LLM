@@ -12,13 +12,15 @@ pip install Flask openai mysql-connector-python pyyaml
 - Enter your OpenAI secret key, MySQL configuration details in the command prompt that pops up.
 - If it crashes after inputting config details, try running
   ```bash
-  pip install urllib3==1.25.11```
+  pip install urllib3==1.25.11
+  ```
 - If you get a different error saying "open ai module does not exist" or "Flask module..." etc. then try running a virtual environment:
   ```bash
   cd <path where you extracted the project root directory>
   python -m venv venv
   source venv/bin/activate
-  run_contract_bot.bat```
+  run_contract_bot.bat
+  ```
 - If valid and everything runs, then type in the link that comes up in your browser to use the application.
 
 # Usage
@@ -58,13 +60,15 @@ While trying to run the 'run_contract_bot.bat' file:
 - Enter your OpenAI secret key, MySQL configuration details in the command prompt that pops up.
 - If it crashes after inputting config details, try running
   ```bash
-  pip install urllib3==1.25.11```
+  pip install urllib3==1.25.11
+  ```
 - If you get a different error saying "open ai module does not exist" or "Flask module..." etc. then try running a virtual environment:
   ```bash
   cd <path where you extracted the project root directory>
   python -m venv venv
   source venv/bin/activate
-  run_contract_bot.bat```
+  run_contract_bot.bat
+  ```
 - If valid and everything runs, then type in the link that comes up in your browser to use the application.
 
 # License
