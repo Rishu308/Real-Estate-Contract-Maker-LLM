@@ -19,7 +19,7 @@ pip install Flask openai mysql-connector-python pyyaml
   ```bash
   cd <path where you extracted the project root directory>
   python -m venv venv
-  source venv/bin/activate
+  pip install Flask openai mysql-connector-python pyyaml
   run_contract_bot.bat
   ```
 - If valid and everything runs, then type in the link that comes up in your browser to use the application.
@@ -67,7 +67,7 @@ While trying to run the 'run_contract_bot.bat' file:
   ```bash
   cd <path where you extracted the project root directory>
   python -m venv venv
-  source venv/bin/activate
+  pip install Flask openai mysql-connector-python pyyaml
   run_contract_bot.bat
   ```
 - If valid and everything runs, then type in the link that comes up in your browser to use the application.
