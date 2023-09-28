@@ -8,6 +8,7 @@ Generate real estate contracts through conversational AI with an LLM.
 pip install Flask openai mysql-connector-python pyyaml
 ```
 # Getting Started
+- Download the zip file from the repo and extract it to a folder of your choice.
 - Run `run_contract_bot.bat` file.
 - Enter your OpenAI secret key, MySQL configuration details in the command prompt that pops up.
 - If it crashes after inputting config details, try running
