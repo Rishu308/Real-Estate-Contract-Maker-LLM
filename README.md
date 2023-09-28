@@ -15,7 +15,7 @@ pip install Flask openai mysql-connector-python pyyaml
   ```bash
   pip install urllib3==1.25.11
   ```
-- If you get a different error saying "open ai module does not exist" or "Flask module..." etc. then try running a virtual environment:
+- If you get a different error saying "ModuleNotFoundError: No module named 'openai'" or "ModuleNotFoundError: No module named 'Flask'" etc. then try running a virtual environment, go to command prompt and enter these:
   ```bash
   cd <path where you extracted the project root directory>
   python -m venv venv
@@ -63,7 +63,7 @@ While trying to run the 'run_contract_bot.bat' file:
   ```bash
   pip install urllib3==1.25.11
   ```
-- If you get a different error saying "open ai module does not exist" or "Flask module..." etc. then try running a virtual environment:
+- If you get a different error saying "ModuleNotFoundError: No module named 'openai'" or "ModuleNotFoundError: No module named 'Flask'" etc. then try running a virtual environment, go to command prompt and enter these:
   ```bash
   cd <path where you extracted the project root directory>
   python -m venv venv
